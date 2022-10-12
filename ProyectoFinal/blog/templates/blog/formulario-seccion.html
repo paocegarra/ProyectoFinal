@@ -4,6 +4,9 @@
 
 <form action= "" method="POST">{% csrf_token %}
     <table>
+        <body>    
+    <p style="color:blue";>Categoría:</p>
+</body>
         {{ formulario.as_table }}
     </table>
     <input type="submit" value="Guardar modelo">

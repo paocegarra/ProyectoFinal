@@ -1,10 +1,12 @@
 {% extends 'blog/madre.html' %}
 
-
 {% block inserte_aqui_su_contenido %}
 
 <form action= "" method="POST">{% csrf_token %}
     <table>
+        <body>    
+    <p style="color:blue";>Datos del diseñador</p>
+</body>
         {{ formulario.as_table }}
     </table>
     <input type="submit" value="Guardar modelo">

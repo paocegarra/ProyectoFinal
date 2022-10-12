@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 from blog.models import Articulo
-from blog.forms import ArticuloForm, SeccionForm, AutorForm
+from blog.forms import ArticuloForm, SeccionForm, DisegnadorForm
 
 # Create your views here.
 
@@ -40,7 +40,7 @@ def procesar_formulario_seccion(request):
     return render (request, "blog/formulario-seccion.html", context = contexto)
 
 
-def procesar_formulario_autor(request):
-    mi_formulario = AutorForm()
+def procesar_formulario_disegnador(request):
+    mi_formulario = DisegnadorForm()
     contexto = {"formulario" : mi_formulario}
-    return render (request,"blog/formulario-autor.html", context = contexto)
+    return render (request,"blog/formulario-diseñador.html", context = contexto)

@@ -3,13 +3,12 @@ from django.db import models
 # Create your models here.
 
 
-class Autor(models.Model):
+class Disegnador(models.Model):
     class Meta:
-        verbose_name_plural = "Autores"
+        verbose_name_plural = "Diseñadores"
 
     nombre = models.CharField(max_length=30)
     apellido = models.CharField(max_length=30)
-    profesion = models.CharField(max_length=30)
 
     def __init__(self):
         return self.nombre

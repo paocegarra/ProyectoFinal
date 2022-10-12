@@ -7,11 +7,10 @@ class ArticuloForm(forms.Form):
     fecha = forms.DateField()
     
 
-class AutorForm(forms.Form):
+class DisegnadorForm(forms.Form):
     
     nombre = forms.CharField(max_length=30)
     apellido = forms.CharField(max_length=30)
-    profesion = forms.CharField(max_length=30)
     
     
 class SeccionForm(forms.Form):
